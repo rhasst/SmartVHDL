@@ -1,0 +1,36 @@
+[
+	{
+		"keys": ["ctrl+f10"], "command": "vhdl_module_inst",
+		"context":
+		[
+			{ "key": "num_selections", "operator": "equal", "operand": 1 },
+			{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}
+		]
+	},
+	{
+		"keys": ["ctrl+shift+a"], "command": "vhdl_align",
+		"context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}
+		]
+	},
+	{
+		"keys": ["ctrl+alt+f"], "command": "vhdl_find_instance",
+		"context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}
+		]
+	},
+	{
+		"keys": ["f12"], "command": "vhdl_hierarchy_goto_definition",
+		"context":[
+			{ "key": "selector", "operator": "equal", "operand": "text.result-vhdl"}
+		]
+	},
+	{ "keys": ["f1"], "command": "vhdl_toggle_navbar", "args":{"cmd":"toggle"}},
+	{ "keys": ["ctrl+f1"], "command": "vhdl_toggle_lock_navbar"},
+	{
+		"keys": ["alt+f1"], "command": "vhdl_show_navbar",
+		"context":[{ "key": "selector", "operator": "equal", "operand": "source.vhdl"}]
+	}
+]

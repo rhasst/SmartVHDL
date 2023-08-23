@@ -22,6 +22,16 @@
 									"base_file": "${packages}/Smart VHDL/VHDL.sublime-settings",
 									"default": ""
 								}
+							},
+							{
+								"caption": "-"
+							},
+							{
+								"caption": "Key Bindings - Default",
+								"command": "edit_settings", "args":
+								{
+									"base_file": "${packages}/Smart VHDL/Default ($platform).sublime-keymap",
+								}
 							}
 						]
 					}
