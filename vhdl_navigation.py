@@ -1047,7 +1047,8 @@ class VhdlUpdateNavbarCommand(sublime_plugin.EventListener):
         # Changes fontsize of navbar content.
         if 'text.hierarchy' in scope:
             fontSize = navBar[wid]['settings']['font_size']
-            view.settings().set("font_size", fontSize)
+            if fontSize > 0:
+                view.settings().set("font_size", fontSize)
 
 # Update the navigation bar
 class VhdlToggleLockNavbarCommand(sublime_plugin.WindowCommand):
